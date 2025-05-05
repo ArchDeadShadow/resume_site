@@ -127,12 +127,12 @@ header * {
 	font-size: 2rem;
 	margin: 0;
 	font-weight: 700;
-	letter-spacing: 8px;
+	letter-spacing: 1px;
 }
 
 .brand h1 span {
 	display: block;
-	line-height: 2;
+	line-height: 1.75;
 }
 
 .brand h1 span:nth-child(2) {
@@ -140,14 +140,14 @@ header * {
 	color: var(--accent);
 	font-weight: 700;
 	font-style: italic;
-	letter-spacing: 6px;
+	letter-spacing: 1px;
 }
 
 .brand h1 span:last-child {
 	font-size: 1.75rem;
 	color: var(--accent);
 	font-weight: 600;
-	letter-spacing: 4px;
+	letter-spacing: 1px;
 }
 
 /* Navigation */
