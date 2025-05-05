@@ -29,8 +29,59 @@
     <title>Sergey Rudenko Resume</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+      <div class="header-container">
+        <div class="brand">
+          <img src="./img/icons/avatar.svg" alt="Sergey Rudenko" height="40">
+          <div>
+            <h1>
+              <span>Sergey Rudenko</span>
+              <span>ArchDeadShadow</span>
+              <br>
+              <span>Fullstack JS Developer</span>
+            </h1>
+          </div>
+        </div>
+      <nav class="menu">
+          <ul>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#github-stats"> GitHub Stats</a></li>
+            <li><a href="#support-me"> Support Me</a></li>
+          </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="about-me">
+        <h2>😊 About Me</h3>
+        <p>Hello! 👋 I’m a full-stack JavaScript developer 💻 passionate about building modern, high-performance web and back-end systems 🚀. I specialize in React ⚛️, using hooks 🪝, Context API 🧠, and component-based architecture 🧱 to craft dynamic, responsive SPAs 📱. I boost performance and SEO with Next.js ⚡ and apply clean styling via styled-components 🎨 or Tailwind CSS 🌬️.</p>
+        <p>On the server 🖥️, I develop REST 🔗 and GraphQL 🧬 APIs with Node.js frameworks 🌲, structure code into modular services 🧩, and design microservices communicating via message queues 📬. I integrate authentication using JWT 🔐 and OAuth2 🛡️, and automate testing 🧪 and deployments 🚚 with CI/CD pipelines ⚙️.</p>
+        <p>For data persistence 🗃️, I model schemas in MongoDB 🍃 with Mongoose 🐍, optimize queries through indexing 📇 and aggregation 📊, and leverage MongoDB Atlas ☁️ for scalable, managed databases. Committed to performance ⚡, security 🛡️, and maintainability 🧼, I collaborate across teams 🤝, mentor peers 👨‍🏫, and contribute to open-source 🌍. Let’s connect 🤝 to tackle challenging projects 🧠 and explore innovative solutions 💡!</p>
+        <p>🚀 Open to collaborations, open-source contributions, and interesting challenges. Feel free to reach out for technical discussions or potential opportunities!</p>
+        <h3>Connect with me:</h3>
+        <div>
+          <a href="mailto:archdeadshadow@icloud.com"><img src="./img/icons/email.svg" loading="lazy" alt="Email" height="30"></a>
+          <a href="https://t.me/ArchDeadShadow" target="_blank"><img src="./img/icons/telegram.svg" loading="lazy" alt="Telegram" height="30"></a>
+          <a href="https://vk.com/archdeadshadow" target="_blank"><img src="./img/icons/vk.svg" loading="lazy" alt="VK" height="30"></a>
+          <a href="https://x.com/ArchDeadShadow" target="_blank">
+            <picture>
+              <source media="(prefers-color-scheme: dark)" srcset="./img/icons/x-light.svg" type="image/svg+xml">
+              <source media="(prefers-color-scheme: light)" srcset="./img/icons/x-dark.svg" type="image/svg+xml">
+              <img src="./img/icons/x-dark.svg" loading="lazy" alt="X" height="30">
+            </picture>
+          </a>
+          <a href="https://www.instagram.com/archdeadshadow" target="_blank"><img src="./img/icons/instagram.svg" alt="Instagram" loading="lazy" height="30"></a>
+          <a href="https://www.linkedin.com/in/sergey-r-a52219230" target="_blank"><img src="./img/icons/linkedin.svg" alt="LinkedIn" loading="lazy" height="30"></a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section id="support-me">
+           <h4>💸 Support Me</h3>
+           <p><a href="https://www.paypal.com/donate/?hosted_button_id=QCEZHJJG8HRD8" target="_blank"><img src="img/icons/paypal.svg" loading="lazy" height="80" alt="PayPal"></a></p>
+         </section>
+         <span>© Sergey Rudenko, <span id="year"></span>. All rights reserved.</span>
+         <script src='./script.js'></script>
+    </footer>
   </body>
 </html>
