@@ -1,7 +1,7 @@
 /* Basic styles */
 body {
 	font-family: 'JetBrains Mono', 'Roboto', 'Arial', sans-serif;
-	background: var(--bg, #fcfffc);
+	background: var(--bg);
 	color: var(--text, #1b2021);
 	margin: 0;
 	padding: 0;
@@ -10,8 +10,28 @@ body {
 	text-align: center;
 	font-size: 1.08rem;
 	font-weight: 500;
-	letter-spacing: 0.08em; /* увеличен межбуквенный интервал */
-	word-spacing: 0.18em; /* увеличен межсловный интервал */
+	letter-spacing: 0.08em;
+	word-spacing: 0.18em;
+}
+
+@media (prefers-color-scheme: light), not (prefers-color-scheme: dark) {
+	body {
+		background-color: var(--bg);
+		opacity: 1;
+		background-image: linear-gradient(#1b202111 0.8px, transparent 0.8px),
+			linear-gradient(to right, #1b202111 0.8px, #fcfffc 0.8px);
+		background-size: 16px 16px;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: var(--bg);
+		opacity: 1;
+		background-image: linear-gradient(#fcfffc11 0.8px, transparent 0.8px),
+			linear-gradient(to right, #fcfffc11 0.8px, #1b2021 0.8px);
+		background-size: 16px 16px;
+	}
 }
 
 :root {
@@ -52,9 +72,9 @@ body {
 
 /* Header */
 header {
-	background: var(--header-bg);
-	border-bottom: 1px solid var(--border);
+	border-bottom: 1px solid var(--accent);
 	padding: 0 0 10px 0;
+	box-shadow: 0 -2px 4px 0 var(--accent), 0 0 6px 2px var(--accent);
 }
 
 header,
@@ -93,14 +113,14 @@ header * {
 	border-radius: 50%;
 	border: 3px solid var(--accent);
 	padding: 4px;
-	background: #fff;
+	background: var(--bg);
 	box-sizing: border-box;
 	transition: border-color 0.2s, transform 0.18s;
 }
 
 .brand img:hover {
-	border-color: #1746a2;
-	transform: scale(1.07) rotate(-2deg);
+	border-color: var(--accent);
+	transform: scale(2) rotate(-2deg);
 }
 
 .brand h1 {
@@ -148,7 +168,7 @@ nav.menu a {
 nav.menu a:hover,
 nav.menu a:focus {
 	background: var(--accent);
-	color: #fff;
+	color: var(--text);
 }
 
 ul {
@@ -216,17 +236,17 @@ li {
 
 #social-networks a:hover img,
 #social-networks a:focus img {
-	transform: scale(1.12);
+	transform: scale(2);
 	filter: brightness(1.2);
 }
 
 /* Footer */
 footer {
-	background: var(--header-bg);
-	border-top: 1px solid var(--border);
+	border-top: 1px solid var(--accent);
 	text-align: center;
 	padding: 24px 16px 12px 16px;
 	margin-top: 40px;
+	box-shadow: 0 -2px 4px 0 var(--accent), 0 0 6px 2px var(--accent);
 }
 
 footer section#support-me {
@@ -240,12 +260,12 @@ footer img[alt='PayPal'] {
 }
 
 footer img[alt='PayPal']:hover {
-	transform: scale(1.07);
+	transform: scale(2);
 }
 
 footer span {
 	font-size: 0.95rem;
-	color: #888;
+	color: var(--accent);
 }
 
 /* Adaptability */
