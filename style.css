@@ -120,7 +120,7 @@ header * {
 
 .brand img:hover {
 	border-color: var(--accent);
-	transform: scale(2) rotate(-2deg);
+	transform: scale(2) rotate(-3deg);
 }
 
 .brand h1 {
@@ -251,6 +251,65 @@ li {
 }
 
 /* GitHub Stats */
+
+#github-stats div {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	transition: transform 0.15s, filter 0.15s;
+	filter: brightness(1.6);
+}
+
+#github-stats .my-github h3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Orbitron', 'Roboto', 'Arial', sans-serif;
+	font-size: 1.3rem;
+	color: var(--accent);
+	font-weight: 700;
+	font-style: italic;
+	letter-spacing: 1px;
+	filter: brightness(0);
+}
+
+#github-stats .my-github {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 60px;
+}
+
+#github-stats .my-github h3 {
+	margin-top: 30px;
+	transform: scale(1.1) rotate(-1deg);
+}
+
+#github-stats .my-github:hover,
+#github-stats .my-github:active {
+	transition: border-color 0.2s, transform 0.18s;
+	transform: scale(1.2) rotate(-3deg);
+}
+
+#github-stats .my-github img {
+	display: block;
+	margin: 0 auto;
+	width: 64px;
+	height: 64px;
+	object-fit: cover;
+	border-radius: 50%;
+	border: 3px solid var(--text);
+	padding: 4px;
+	box-sizing: border-box;
+}
+
+#github-stats .my-github img:hover {
+	border-color: var(--accent);
+	transform: scale(2) rotate(-3deg);
+}
+
 @media (prefers-color-scheme: light), not (prefers-color-scheme: dark) {
 	#github-stats div img {
 		padding: 24px 0 16px 0;
@@ -263,6 +322,10 @@ li {
 		transition: transform 0.15s, filter 0.15s;
 		transform: scale(1.37);
 		filter: brightness(0.7);
+	}
+
+	#github-stats .my-github h3 {
+		filter: brightness(default);
 	}
 }
 
@@ -279,16 +342,6 @@ li {
 		transform: scale(1.37);
 		filter: brightness(1.5);
 	}
-}
-
-#github-stats div {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.08));
-	transition: transform 0.15s, filter 0.15s;
-	filter: brightness(1.75);
 }
 
 /* Footer */
