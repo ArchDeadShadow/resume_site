@@ -8,10 +8,10 @@ body {
 	line-height: 1.6;
 	min-height: 100vh;
 	text-align: center;
-	font-size: 1.08rem;
+	font-size: 1.1rem;
 	font-weight: 500;
-	letter-spacing: 0.08em;
-	word-spacing: 0.18em;
+	letter-spacing: 0.1em;
+	word-spacing: 0.2em;
 	background-size: 16px 16px;
 }
 
@@ -211,6 +211,22 @@ footer * {
 
 li {
 	margin-bottom: 8px;
+}
+
+/* Skills */
+#skills ul {
+	display: block;
+	line-height: 1.7;
+	letter-spacing: 0.15em;
+	word-spacing: 0.3em;
+}
+
+/* Education */
+#education ul {
+	display: block;
+	line-height: 2;
+	letter-spacing: 0.2em;
+	word-spacing: 0.4em;
 }
 
 /* About Me */
