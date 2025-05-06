@@ -26,6 +26,26 @@
 			name="description"
 			content="Sergey Rudenko – Fullstack JavaScript Developer specializing in React, Node.js, and MongoDB. Experienced in building scalable Single Page Applications (SPAs), REST APIs, and modern front-end interfaces using React.js, TypeScript, Tailwind CSS, and Express.js. Passionate about clean code, performance optimization, and open-source development."
 		/>
+		<link rel="icon" type="image/x-icon" href="./img/favicon/favicon.ico" />
+		<link
+			rel="apple-touch-icon"
+			type="image/png"
+			sizes="180x180"
+			href="./img/favicon/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./img/favicon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./img/favicon/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="./img/favicon/site.webmanifest" />
 		<link
 			rel="preconnect"
 			href="https://github-readme-stats.vercel.app"
@@ -38,20 +58,12 @@
 		/>
 		<link
 			rel="preload"
-			href="./css/normalize.min.css"
-			as="style"
-			type="text/css"
-			crossorigin="anonymous"
-		/>
-		<link
-			rel="preload"
 			href="./css/style.min.css"
 			as="style"
 			type="text/css"
 			crossorigin="anonymous"
 		/>
-		<link rel="stylesheet" href="./css/normalize.css" />
-		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/style.min.css" />
 		<title>Sergey Rudenko Resume</title>
 	</head>
 	<body>
@@ -62,8 +74,10 @@
 						src="./img/avatar/vhs_skull_8bit_compressed.jpg"
 						alt="Sergey Rudenko"
 						height="40"
-						loading="lazy"
+						width="40"
+						loading="eager"
 						decoding="async"
+						fetchpriority="high"
 					/>
 					<div>
 						<h1>
@@ -313,7 +327,7 @@
 			<span>
 				© Sergey Rudenko, <span id="year"></span>. All rights reserved.
 			</span>
-			<script src="./js/script.js"></script>
+			<script src="./js/script.js" defer></script>
 		</footer>
 	</body>
 </html>
