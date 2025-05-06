@@ -266,15 +266,29 @@
 			<section id="github-stats">
 				<h2>⭐️ GitHub Stats</h2>
 				<div class="my-github">
-					<a href="https://github.com/ArchDeadShadow" target="_blank"
-						><img
-							src="./img/icons/github-dark.svg"
-							loading="lazy"
-							decoding="async"
-							alt="GitHub"
-							height="100"
-					/></a>
-					<h3>My GitHub</h3>
+					<a href="https://github.com/ArchDeadShadow" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+						<picture>
+							<source
+								media="(prefers-color-scheme: dark)"
+								srcset="./img/icons/github-light.svg"
+								type="image/svg+xml"
+							/>
+							<source
+								media="(prefers-color-scheme: light)"
+								srcset="./img/icons/github-dark.svg"
+								type="image/svg+xml"
+							/>
+							<img
+								src="./img/icons/github-dark.svg"
+								loading="lazy"
+								decoding="async"
+								alt="GitHub"
+								height="30"
+								width="30"
+							/>
+						</picture>
+						<h3>My GitHub</h3>
+					</a>
 				</div>
 				<div class="img-github-stats">
 					<img
@@ -282,24 +296,32 @@
 						loading="lazy"
 						decoding="async"
 						alt="GitHub stats Card"
+						width="400"
+						height="200"
 					/>
 					<img
 						src="https://streak-stats.demolab.com/?user=ArchDeadShadow&theme=transparent&hide_border=false&date_format=d+F%5B%2C+Y%5D&mode=daily&hide_total_contributions=false&hide_current_streak=false&hide_longest_streak=false&card_height=200&border=transparent&stroke=transparent&exclude_days="
 						loading="lazy"
 						decoding="async"
 						alt="GitHub streak Card"
+						width="400"
+						height="200"
 					/>
 					<img
 						src="https://github-readme-stats.vercel.app/api/top-langs?username=ArchDeadShadow&theme=transparent&hide_title=false&layout=compact&langs_count=4&hide_progress=true&card_width=400&title_color=Blue&text_color=Blue&hide_border=true&icon_color=Blue"
 						alt="GitHub top-langs Card"
 						loading="lazy"
 						decoding="async"
+						width="400"
+						height="200"
 					/>
 					<img
 						src="https://github-readme-stats.vercel.app/api/pin/?username=ArchDeadShadow&repo=ArchDeadShadow&show_owner=true&theme=transparent&hide_border=true"
 						loading="lazy"
 						decoding="async"
 						alt="GitHub repo-card Card"
+						width="400"
+						height="200"
 					/>
 				</div>
 			</section>
