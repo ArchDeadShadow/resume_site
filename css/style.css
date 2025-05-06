@@ -12,6 +12,7 @@ body {
 	font-weight: 500;
 	letter-spacing: 0.08em;
 	word-spacing: 0.18em;
+	background-size: 16px 16px;
 }
 
 @media (prefers-color-scheme: light), not (prefers-color-scheme: dark) {
@@ -20,7 +21,6 @@ body {
 		opacity: 1;
 		background-image: linear-gradient(#1b202111 0.8px, transparent 0.8px),
 			linear-gradient(to right, #1b202111 0.8px, #fcfffc 0.8px);
-		background-size: 16px 16px;
 	}
 }
 
@@ -30,7 +30,6 @@ body {
 		opacity: 1;
 		background-image: linear-gradient(#fcfffc11 0.8px, transparent 0.8px),
 			linear-gradient(to right, #fcfffc11 0.8px, #1b2021 0.8px);
-		background-size: 16px 16px;
 	}
 }
 
@@ -156,10 +155,11 @@ nav.menu {
 	text-align: center;
 }
 
+ul,
 nav.menu ul {
 	list-style: none;
 	margin: 0;
-	padding: 0;
+	padding-left: 0;
 	display: inline-flex;
 	gap: 18px;
 	flex-wrap: wrap;
@@ -180,11 +180,6 @@ nav.menu a:focus {
 	color: var(--text);
 }
 
-ul {
-	padding-left: 20px;
-	list-style: none;
-}
-
 /* Main */
 main {
 	max-width: 900px;
@@ -201,7 +196,9 @@ section {
 h1,
 h2,
 h3,
-h4 {
+h4,
+footer,
+footer * {
 	font-family: 'Orbitron', 'Roboto', 'Arial', sans-serif;
 	font-weight: 700;
 	letter-spacing: 0.12em;
@@ -345,11 +342,6 @@ li {
 }
 
 /* Footer */
-footer,
-footer * {
-	font-family: 'Orbitron', 'Roboto', 'Arial', sans-serif;
-}
-
 footer {
 	border-top: 1px solid var(--accent);
 	text-align: center;
