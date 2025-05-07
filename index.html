@@ -58,11 +58,19 @@
 		/>
 		<link
 			rel="preload"
+			href="./css/normalize.min.css"
+			as="style"
+			type="text/css"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="preload"
 			href="./css/style.min.css"
 			as="style"
 			type="text/css"
 			crossorigin="anonymous"
 		/>
+		<link rel="stylesheet" href="./css/normalize.css" />
 		<link
 			rel="stylesheet"
 			href="./js/OwlCarousel2-2.3.4/public/assets/owl.carousel.min.css"
@@ -71,7 +79,6 @@
 			rel="stylesheet"
 			href="./js/OwlCarousel2-2.3.4/public/assets/owl.theme.default.min.css"
 		/>
-		<link rel="stylesheet" href="./css/animate.min.css" />
 		<link rel="stylesheet" href="./css/style.min.css" />
 		<title>Sergey Rudenko Resume</title>
 	</head>
@@ -278,7 +285,7 @@
 					Stay tuned for my upcoming projects! I’m working on a few exciting
 					ones that will showcase my skills and creativity. Check back soon!
 				</p>
-				<div class="owl-carousel owl-theme">
+				<div class="owl-carousel owl-theme owl-carousel-reponsive">
 					<img
 						class="owl-lazy"
 						data-src="./img/github_projects/js_animation_header_img_compressed.gif"
@@ -438,9 +445,11 @@
 					</a>
 				</p>
 			</section>
-			<span>
-				© Sergey Rudenko, <span id="year"></span>. All rights reserved.
-			</span>
+			<div>
+				<span>
+					© Sergey Rudenko, <span id="year"></span>. All rights reserved.
+				</span>
+			</div>
 			<script src="./js/jquery-3.7.1.min.js"></script>
 			<script
 				src="./js/OwlCarousel2-2.3.4/public/owl.carousel.min.js"
