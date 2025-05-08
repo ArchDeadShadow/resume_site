@@ -1,3 +1,4 @@
+/* Base */
 :root {
 	--bg: #fcfffc;
 	--text: #1b2021;
@@ -28,6 +29,7 @@ body {
 	word-spacing: 0.2em;
 	background-size: 16px 16px;
 }
+/* Theme */
 @media (prefers-color-scheme: light), not (prefers-color-scheme: dark) {
 	body {
 		background-color: var(--bg);
@@ -52,6 +54,7 @@ body {
 		--header-bg: #23272a;
 	}
 }
+/* Fonts */
 @font-face {
 	font-family: 'Orbitron';
 	src: url('./font/Orbitron/Orbitron-VariableFont_wght.ttf') format('truetype');
@@ -67,6 +70,7 @@ body {
 	font-style: normal;
 	font-display: swap;
 }
+/* Header */
 header {
 	margin-top: 25px;
 }
@@ -133,7 +137,7 @@ header * {
 	font-weight: 600;
 	letter-spacing: 1px;
 }
-
+/* Header Menu */
 nav.menu {
 	margin: 20px 0;
 	font-family: 'Orbitron', 'Roboto', 'Arial', sans-serif;
@@ -163,6 +167,7 @@ nav.menu a:focus {
 	background: var(--accent);
 	color: var(--text);
 }
+/* Main */
 main {
 	max-width: 1200px;
 }
@@ -185,24 +190,28 @@ footer * {
 li {
 	margin-bottom: 8px;
 }
-About Me #about-me h2 {
+/* About Me */
+#about-me h2 {
 	margin: 20px 0;
 }
 #about-me p {
 	margin: 30px 20px;
 }
+/* Skills */
 #skills ul {
 	display: block;
 	line-height: 1.7;
 	letter-spacing: 0.15em;
 	word-spacing: 0.3em;
 }
+/* Education */
 #education ul {
 	display: block;
 	line-height: 2;
 	letter-spacing: 0.2em;
 	word-spacing: 0.4em;
 }
+/* Social Networks */
 #social-networks {
 	margin-top: 18px;
 }
@@ -225,6 +234,10 @@ About Me #about-me h2 {
 	transform: scale(2);
 	filter: brightness(1.2);
 }
+/* Future Projects */
+#future-projects h4 {
+	margin-top: 20px;
+}
 #future-projects .owl-carousel {
 	margin: 30px auto;
 	padding: 0 2vw;
@@ -236,6 +249,7 @@ About Me #about-me h2 {
 .owl-carousel-reponsive {
 	max-width: 90vw;
 }
+/* GitHub Stats */
 #github-stats .my-github {
 	max-width: 100vw;
 	box-sizing: border-box;
@@ -291,6 +305,7 @@ About Me #about-me h2 {
 	flex-wrap: wrap;
 	margin: 0 16px;
 }
+/* Theme GitHub Stats */
 @media (prefers-color-scheme: light), not (prefers-color-scheme: dark) {
 	#github-stats div img {
 		padding: 24px 0 16px 0;
@@ -317,6 +332,7 @@ About Me #about-me h2 {
 		filter: brightness(1.5);
 	}
 }
+/* Footer */
 footer section #support-me {
 	margin: 10px 0;
 }
@@ -336,7 +352,7 @@ footer div {
 footer nav.menu {
 	margin: 20px 0;
 }
-
+/* Responsive Design */
 @media (max-width: 900px) {
 	.header-container,
 	main {

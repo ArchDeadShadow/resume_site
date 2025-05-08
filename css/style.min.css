@@ -23,7 +23,7 @@ main{max-width:1200px;}
 section{margin-bottom:25px;}
 h1,h2,h3,h4,footer,footer *{font-family:'Orbitron','Roboto','Arial',sans-serif;font-weight:700;letter-spacing:.12em;word-spacing:.22em;color:var(--accent);margin-top:0;}
 li{margin-bottom:8px;}
-About Me #about-me h2{margin:20px 0;}
+#about-me h2{margin:20px 0;}
 #about-me p{margin:30px 20px;}
 #skills ul{display:block;line-height:1.7;letter-spacing:.15em;word-spacing:.3em;}
 #education ul{display:block;line-height:2;letter-spacing:.2em;word-spacing:.4em;}
@@ -32,6 +32,7 @@ About Me #about-me h2{margin:20px 0;}
 #social-networks div{display:flex;gap:16px;flex-wrap:wrap;justify-content:center;align-items:center;}
 #social-networks a img{filter:drop-shadow(0 1px 2px rgba(0,0,0,.08));transition:transform .15s,filter .15s;}
 #social-networks a:hover img,#social-networks a:focus img{transform:scale(2);filter:brightness(1.2);}
+#future-projects h4{margin-top:20px;}
 #future-projects .owl-carousel{margin:30px auto;padding:0 2vw;}
 .owl-carousel img{height:auto;display:block;}
 .owl-carousel-reponsive{max-width:90vw;}
