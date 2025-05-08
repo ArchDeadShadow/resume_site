@@ -8,6 +8,7 @@
 	--border: 3px solid #2d6cdf;
 	--radius: 18px;
 }
+
 body {
 	display: flex;
 	flex-direction: column;
@@ -29,23 +30,26 @@ body {
 	word-spacing: 0.2em;
 	background-size: 16px 16px;
 }
+
 /* Theme */
 @media (prefers-color-scheme: light), not (prefers-color-scheme: dark) {
 	body {
 		background-color: var(--bg);
 		opacity: 1;
 		background-image: linear-gradient(#1b202111 0.8px, transparent 0.8px),
-			linear-gradient(to right, #1b202111 0.8px, #fcfffc 0.8px);
+		linear-gradient(to right, #1b202111 0.8px, #fcfffc 0.8px);
 	}
 }
+
 @media (prefers-color-scheme: dark) {
 	body {
 		background-color: var(--bg);
 		opacity: 1;
 		background-image: linear-gradient(#fcfffc11 0.8px, transparent 0.8px),
-			linear-gradient(to right, #fcfffc11 0.8px, #1b2021 0.8px);
+		linear-gradient(to right, #fcfffc11 0.8px, #1b2021 0.8px);
 	}
 }
+
 @media (prefers-color-scheme: dark) {
 	:root {
 		--bg: #1b2021;
@@ -54,6 +58,7 @@ body {
 		--header-bg: #23272a;
 	}
 }
+
 /* Fonts */
 @font-face {
 	font-family: 'Orbitron';
@@ -62,22 +67,25 @@ body {
 	font-style: normal;
 	font-display: swap;
 }
+
 @font-face {
 	font-family: 'JetBrains Mono';
-	src: url('./font/jetbrains_mono/JetBrainsMono-VariableFont_wght.ttf')
-		format('truetype');
+	src: url('./font/jetbrains_mono/JetBrainsMono-VariableFont_wght.ttf') format('truetype');
 	font-weight: 600;
 	font-style: normal;
 	font-display: swap;
 }
+
 /* Header */
 header {
 	margin-top: 25px;
 }
+
 header,
 header * {
 	font-family: 'Orbitron', 'Roboto', 'Arial', sans-serif;
 }
+
 .header-container {
 	display: flex;
 	align-items: center;
@@ -90,6 +98,7 @@ header * {
 	transition: border-color 0.2s;
 	border: none;
 }
+
 .brand {
 	display: flex;
 	flex-direction: column;
@@ -97,6 +106,7 @@ header * {
 	justify-content: center;
 	gap: 8px;
 }
+
 .brand img {
 	display: block;
 	margin: 0 auto;
@@ -110,20 +120,24 @@ header * {
 	box-sizing: border-box;
 	transition: border-color 0.2s, transform 0.18s;
 }
+
 .brand img:hover {
 	border-color: var(--accent);
 	transform: scale(2) rotate(-3deg);
 }
+
 .brand h1 {
 	font-size: 2rem;
 	margin: 0;
 	font-weight: 700;
 	letter-spacing: 1px;
 }
+
 .brand h1 span {
 	display: block;
 	line-height: 1.75;
 }
+
 .brand h1 span:nth-child(2) {
 	font-size: 1.3rem;
 	color: var(--accent);
@@ -131,21 +145,24 @@ header * {
 	font-style: italic;
 	letter-spacing: 1px;
 }
+
 .brand h1 span:last-child {
 	font-size: 1.75rem;
 	color: var(--accent);
 	font-weight: 600;
 	letter-spacing: 1px;
 }
+
 /* Header Menu */
 nav.menu {
-	margin: 20px 0;
+	margin: 40px 0;
 	font-family: 'Orbitron', 'Roboto', 'Arial', sans-serif;
 	font-size: 1.2rem;
 	font-weight: 700;
 	letter-spacing: 0.2em;
 	word-spacing: 0.1em;
 }
+
 ul,
 nav.menu ul {
 	display: flex;
@@ -155,6 +172,7 @@ nav.menu ul {
 	margin: 10px 0;
 	padding-left: 0;
 }
+
 nav.menu a {
 	text-decoration: none;
 	color: var(--text);
@@ -162,18 +180,22 @@ nav.menu a {
 	border-radius: 4px;
 	transition: background 0.2s, color 0.2s;
 }
+
 nav.menu a:hover,
 nav.menu a:focus {
 	background: var(--accent);
 	color: var(--text);
 }
+
 /* Main */
 main {
 	max-width: 1200px;
 }
+
 section {
 	margin-bottom: 25px;
 }
+
 h1,
 h2,
 h3,
@@ -187,16 +209,20 @@ footer * {
 	color: var(--accent);
 	margin-top: 0;
 }
+
 li {
 	margin-bottom: 8px;
 }
+
 /* About Me */
 #about-me h2 {
-	margin: 20px 0;
+	margin: 0;
 }
+
 #about-me p {
 	margin: 30px 20px;
 }
+
 /* Skills */
 #skills ul {
 	display: block;
@@ -204,6 +230,20 @@ li {
 	letter-spacing: 0.15em;
 	word-spacing: 0.3em;
 }
+
+/* What I Do Best */
+#what-i-do-best ul {
+	display: inline;
+}
+
+.tech-icons {
+	margin-top: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
 /* Education */
 #education ul {
 	display: block;
@@ -211,13 +251,16 @@ li {
 	letter-spacing: 0.2em;
 	word-spacing: 0.4em;
 }
+
 /* Social Networks */
 #social-networks {
 	margin-top: 18px;
 }
+
 #social-networks h3 {
 	margin-bottom: 10px;
 }
+
 #social-networks div {
 	display: flex;
 	gap: 16px;
@@ -225,35 +268,43 @@ li {
 	justify-content: center;
 	align-items: center;
 }
+
 #social-networks a img {
 	filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.08));
 	transition: transform 0.15s, filter 0.15s;
 }
+
 #social-networks a:hover img,
 #social-networks a:focus img {
 	transform: scale(2);
 	filter: brightness(1.2);
 }
+
 /* Future Projects */
 #future-projects h4 {
 	margin-top: 20px;
 }
+
 #future-projects .owl-carousel {
 	margin: 30px auto;
 	padding: 0 2vw;
 }
+
 .owl-carousel img {
 	height: auto;
 	display: block;
 }
+
 .owl-carousel-reponsive {
 	max-width: 90vw;
 }
+
 /* GitHub Stats */
 #github-stats .my-github {
 	max-width: 100vw;
 	box-sizing: border-box;
 }
+
 #github-stats div {
 	display: flex;
 	flex-wrap: wrap;
@@ -262,6 +313,7 @@ li {
 	transition: transform 0.15s, filter 0.15s;
 	filter: brightness(1.6);
 }
+
 #github-stats .my-github h3 {
 	display: flex;
 	justify-content: center;
@@ -275,17 +327,20 @@ li {
 	margin-top: 40px;
 	transform: scale(1.1) rotate(-1deg);
 }
+
 #github-stats .my-github a,
 #github-stats .my-github a:hover,
 #github-stats .my-github a:visited,
 #github-stats .my-github a:active {
 	text-decoration-line: none;
 }
+
 #github-stats .my-github a:hover,
 #github-stats .my-github a:active {
 	transition: border-color 0.2s, transform 0.18s;
 	transform: scale(1.2) rotate(-3deg);
 }
+
 #github-stats .my-github img {
 	display: block;
 	margin: 20px auto;
@@ -297,6 +352,7 @@ li {
 	padding: 4px;
 	box-sizing: border-box;
 }
+
 #github-stats .img-github-stats img {
 	display: flex;
 	flex-direction: column;
@@ -305,6 +361,7 @@ li {
 	flex-wrap: wrap;
 	margin: 0 16px;
 }
+
 /* Theme GitHub Stats */
 @media (prefers-color-scheme: light), not (prefers-color-scheme: dark) {
 	#github-stats div img {
@@ -312,6 +369,7 @@ li {
 		margin-bottom: 32px;
 		filter: brightness(0.6);
 	}
+
 	#github-stats div img:hover,
 	#github-stats div img:focus {
 		transition: transform 0.15s, filter 0.15s;
@@ -319,12 +377,14 @@ li {
 		filter: brightness(0.7);
 	}
 }
+
 @media (prefers-color-scheme: dark) {
 	#github-stats div img {
 		padding: 24px 0 16px 0;
 		margin-bottom: 32px;
 		filter: brightness(1);
 	}
+
 	#github-stats div img:hover,
 	#github-stats div img:focus {
 		transition: transform 0.15s, filter 0.15s;
@@ -332,26 +392,32 @@ li {
 		filter: brightness(1.5);
 	}
 }
+
 /* Footer */
 footer section #support-me {
 	margin: 10px 0;
 }
+
 footer img[alt='PayPal'] {
 	margin: 0 auto;
 	display: block;
 	transition: transform 0.15s;
 }
+
 footer img[alt='PayPal']:hover {
 	transform: scale(2);
 }
+
 footer div {
 	margin-bottom: 10px;
 	font-size: 0.95rem;
 	color: var(--accent);
 }
+
 footer nav.menu {
 	margin: 20px 0;
 }
+
 /* Responsive Design */
 @media (max-width: 900px) {
 	.header-container,
@@ -359,145 +425,181 @@ footer nav.menu {
 		max-width: 100vw;
 		padding: 0 8px;
 	}
+
 	nav.menu ul {
 		justify-content: center;
 	}
+
 	#github-stats .img-github-stats img,
 	#github-stats .img-github-stats img:hover,
 	#github-stats .img-github-stats img:focus {
 		transform: none;
 	}
 }
+
 @media (max-width: 700px) {
 	.header-container {
 		gap: 16px;
 		padding: 20px 8px 0 8px;
 	}
+
 	main {
 		padding: 0 4px;
 	}
+
 	#about-me p {
 		max-width: 95vw;
 		font-size: 1rem;
 	}
 }
+
 @media (max-width: 600px) {
 	body {
 		margin: 0 10px;
 	}
+
 	.header-container {
 		gap: 10px;
 	}
+
 	.brand img {
 		width: 56px;
 		height: 56px;
 		margin-bottom: 8px;
 	}
+
 	nav.menu ul {
 		flex-direction: column;
 		gap: 8px;
 	}
+
 	main {
 		margin-top: 10px;
 	}
+
 	section {
 		margin-bottom: 16px;
 		padding: 0 2vw;
 	}
+
 	.owl-carousel,
 	.owl-theme {
 		width: 90% !important;
 		max-width: 90vw;
 	}
+
 	.owl-carousel img,
 	.owl-carousel picture {
 		max-width: 100vw;
 		height: auto;
 		margin: 0 auto;
 	}
+
 	.owl-carousel-reponsive {
 		max-width: 100vw;
 	}
+
 	#future-projects h3 {
 		font-size: 1.1rem;
 	}
+
 	#future-projects p {
 		font-size: 0.98rem;
 	}
+
 	#github-stats {
 		padding: 12px 0;
 		margin-bottom: 16px;
 	}
+
 	#github-stats .my-github h3 {
 		font-size: 1rem;
 		margin-top: 16px;
 	}
+
 	#github-stats .my-github img {
 		max-width: 32px;
 		max-height: 32px;
 	}
 }
+
 @media (max-width: 400px) {
 	.brand img {
 		width: 44px;
 		height: 44px;
 		padding: 2px;
 	}
+
 	.brand h1 {
 		font-size: 1rem;
 	}
+
 	.header-container {
 		border-radius: 8px;
 	}
+
 	#future-projects h3 {
 		font-size: 1rem;
 	}
+
 	#future-projects p {
 		font-size: 0.92rem;
 	}
+
 	.owl-carousel img,
 	.owl-carousel picture,
 	.owl-carousel-reponsive {
 		max-width: 100vw;
 	}
+
 	#github-stats .my-github h3 {
 		font-size: 0.85rem;
 	}
+
 	#github-stats .my-github img {
 		width: 32px;
 		height: 32px;
 	}
 }
+
 @media (max-width: 350px) {
 	.brand img {
 		width: 36px;
 		height: 36px;
 		padding: 1px;
 	}
+
 	.brand h1 {
 		font-size: 0.85rem;
 	}
+
 	#future-projects h3 {
 		font-size: 0.92rem;
 	}
+
 	#future-projects p {
 		font-size: 0.85rem;
 	}
+
 	.owl-carousel img {
 		max-width: 99vw;
 	}
+
 	.owl-carousel-reponsive {
 		max-width: 90vw;
 	}
 }
+
 @media (max-width: 320px) {
 	.brand h1 {
 		font-size: 0.7rem;
 	}
+
 	#future-projects h3,
 	#future-projects p {
 		font-size: 0.8rem;
 	}
+
 	.owl-carousel-reponsive {
 		max-width: 90vw;
 	}
