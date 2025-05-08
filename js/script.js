@@ -4,22 +4,21 @@ document.getElementById('year').textContent = new Date().getFullYear()
 // Owl Carousel 2
 $('.owl-carousel').owlCarousel({
 	lazyLoad: true,
-	nav: false,
+	nav: true,
 	loop: true,
 	margin: 10,
-	responsiveClass: true,
 	responsive: {
 		0: {
 			items: 1,
-			nav: true,
 		},
-		600: {
+		480: {
+			items: 2,
+		},
+		768: {
 			items: 3,
-			nav: false,
 		},
 		1000: {
-			items: 5,
-			nav: true,
+			items: 4,
 			loop: false,
 		},
 	},
