@@ -336,7 +336,7 @@ footer div {
 	color: var(--accent);
 }
 footer nav {
-	margin: 10px 0;
+	margin: 30px 0;
 }
 @media (max-width: 900px) {
 	nav.menu ul {
